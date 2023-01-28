@@ -191,6 +191,8 @@ body {
   height: 554px;
 
   margin: 0 auto;
+
+  position: relative;
 }
 
 .slider {
@@ -333,6 +335,28 @@ body {
 .product-slide__button-image {
   height: 16px;
   width: 16px;
+}
+
+.slider-social {
+  display: flex;
+  position: absolute;
+  gap: 16px;
+
+  right: 0;
+  bottom: 0;
+}
+
+.button--social {
+  height: 28px;
+  width: 28px;
+
+  border: 2px solid var(--special-extra-light);
+  border-radius: 50%;
+  background: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* banner */
