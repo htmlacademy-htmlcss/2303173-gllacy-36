@@ -15,8 +15,8 @@
           <ul class="navigation__list">
             <li class="navigation__item">
               <a class="navigation__link" href="ctalog.html">Каталог</a>
-              <img class="navigation__arrow-down" src="/assets/Arrow-down.png">
             </li>
+            <img class="navigation__arrow-down" src="/assets/Arrow-down.png">
             <li class="navigation__item"><a class="navigation__link" href="#">Доставка и оплата</a></li>
             <li class="navigation__item"><a class="navigation__link" hred="#">О компании</a></li>
           </ul>
@@ -201,14 +201,65 @@
 
       <section class="news">
 
-        <div>
-
+        <div class="news__banner">
+          <p class="news__text">Новое в нашем блоге</p>
+          <h3 class="news__title">10 способов сервировки<br> фруктовых щербетов<br> к столу</h3>
         </div>
 
-        <div>
+        <div class="news__mailing-list">
+          <div class="news__background">
+            <p class="news__mailing-list-text">Подпишитесь на нашу сладкую рассылку и будьте всегда<br> в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <div class="mailing-form">
+              <form class="form" action="#">
+                <input class="form__input" type="email" name="email" placeholder="email@example.com">
+                <button class="button button--mailing-list">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="delivery">
+        <div class="delivery__flex-container">
+          <div class="delivery__info">
+            <h2 class="delivery__title">Доставка любимого<br> мороженого на дом</h2>
+            <p class="delivery__description">Хочется полакомиться любимым десертом,<br> но нет времени съездить в магазин? Закажите<br> доставку мороженого на дом, и курьер<br> привезёт вам ваш заказ в течение часа!</p>
+          </div>
+          <div class="delivery__form-background">
+
+          </div>
+        </div>
+      </section>
+
+      <section class="feedback">
+        <div class="feedback__background">
+          <p class="feedback__description">Адрес главного офиса<br> и офлайн-магазина:</p>
+          <h4 class="feedback__title">наб. реки Карповки,<br> 5 лит П, Санкт-Петербург</h4>
+          <p class="feedback__description-phone">Для заказов по телефону:</p>
+          <h4 class="feedback__title"><a class="feedback__phone" href="tel:+78128121212">+7 (812) 812-12-12</a></h4>
+          <p class="feedback__phone-descruption">(с 10 до 20 ежедневно)</p>
+          <button class="button button--feedback">Форма обратной связи</button>
         </div>
       </section>
     </main>
+
+    <footer class="footer">
+      <div class="footer__social">
+        <button class="button button--social"><img class="" src="/assets/telegram.svg"></button>
+        <button class="button button--social"><img class="" src="/assets/vk.svg"></button>
+        <button class="button button--social"><img class="" src="/assets/youtube.svg"></button>
+      </div>
+
+
+
+
+
+
+
+      <div class="footer__logo">
+        <img class="footer__logo-image" src="/assets/logo_htmlacademy.svg">
+        <p class="footer__sign-logo">Сделано в .html academy © 2021</p>
+      </div>
+    </footer>
   </body>
 </html>
