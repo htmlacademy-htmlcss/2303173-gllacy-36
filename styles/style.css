@@ -1,0 +1,289 @@
+/* Используемые цвета */
+
+:root {
+  --basic-extra-dark:#2D3440;
+  --basic-dark:#565C66;
+  --basic-neutral:#B9B9B9;
+  --basic-light:#E7E7E7;
+  --basic-extra-light:#FCFCFC;
+  --basic-white:#FFFFFF;
+  --special-extra-bright:#FF2F64;
+  --special-bright:#FF4A78;
+  --special-neutral:#FF7799;
+  --special-light:#FEAFC3;
+  --special-extra-light:#FFCBD8;
+  --special-blue:#69A9FF;
+  --special-yellow:#FCC850;
+  --status-error:#EA5454;
+  --status-warning:#FD912E;
+  --status-success:#00E484;
+}
+
+
+/* Используемые шрифты */
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/inter-400.woff2);
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url(/fonts/inter-700.woff2);
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  src: url(/fonts/inter-900.woff2);
+}
+
+
+/* Обнуление стилей, фон и шрифт для страницы */
+
+body {
+  background-color:var(--special-light);
+  font-family: 'Inter';
+  margin: 0;
+}
+
+
+/* Кнопки */
+
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+
+  font-family: 'Inter';
+  cursor: pointer;
+
+  padding: 0;
+}
+
+.button--search {
+  border-radius: 16px;
+  border: 2px solid transparent;
+  background: rgba(252, 252, 252, 0.3);
+
+  width: 32px;
+  height: 32px;
+}
+
+.button--search:hover {
+  background: rgba(252, 252, 252, 0.5);
+}
+
+.button--search:active {
+  background: var(--basic-extra-light);
+}
+
+.button--search:focus {
+  border: 2px solid #2D3440;
+  outline: transparent;
+}
+
+.button--header {
+  border-radius: 16px;
+  border: 2px solid transparent;
+  background: rgba(252, 252, 252, 0.3);
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--basic-extra-dark);
+
+  padding: 4px 14px;
+  gap: 6px;
+}
+
+.button--header:hover {
+  background: rgba(252, 252, 252, 0.5);
+}
+
+.button--header:active {
+  background: var(--basic-extra-light);
+}
+
+.button--header:focus {
+  border: 2px solid #2D3440;
+  outline: transparent;
+}
+
+
+/* Параграфы и заголовки */
+
+.h1-text {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+
+  color: var(--basic-extra-dark);
+}
+
+.h2-text {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+
+  color: var(--basic-extra-dark);
+}
+
+.h3-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+
+  color: var(--basic-extra-dark);
+}
+
+.h4-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: var(--basic-extra-dark);
+}
+
+.p1-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: var(--basic-extra-dark);
+}
+
+.p2-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: var(--basic-dark);
+}
+
+.p3-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: var(--basic-extra-dark);
+}
+
+.p3-text-bold {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: var(--basic-extra-dark);
+}
+
+.sign-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: var(--basic-dark);
+}
+
+.sign-text-bold {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: var(--basic-dark);
+}
+
+.sign2-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: var(--basic-dark);
+}
+
+
+/* Хедер (site-navigation) */
+
+.header {
+  max-width: 1170px;
+  height: 104px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__site-navigation {
+  display: flex;
+}
+
+.header__logo {
+  height: 56px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+}
+
+.navigation__item {
+  display: inline-block;
+  margin-left: 32px;
+}
+
+.navigation__link {
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+
+/* Хедер (user-navigation) */
+
+.header__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+}
+
+.header__item {
+  display: inline-block;
+  margin-left: 16px;
+}
+
+.header__link {
+  text-decoration: none;
+}
