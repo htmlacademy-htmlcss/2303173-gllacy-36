@@ -117,79 +117,117 @@ body {
   outline: transparent;
 }
 
+.button--primary {
+  border-radius: 26px;
+  outline: 4px solid rgba(252, 252, 252, 0.4);
+  border: 0;
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--basic-extra-dark);
+
+  padding: 12px 32px;
+}
+
+.button--primary:hover {
+  outline: 4px solid var(--basic-extra-light);
+  background: rgba(252, 252, 252, 0.4);
+  box-shadow: 0 4px 15px rgba(133, 133, 133, 0.15);
+}
+
+.button--primary:active {
+  outline: 2px solid var(--basic-extra-dark);
+  background: var(--basic-extra-light);
+}
+
+.button--primary:focus {
+  outline: 2px solid var(--basic-extra-dark);
+  background: rgba(252, 252, 252, 0.5);
+}
+
 
 /* Параграфы и заголовки */
 
-.h1-text {
+.title-xl {
   font-style: normal;
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
 
   color: var(--basic-extra-dark);
+  margin: 0;
 }
 
-.h2-text {
+.title-l {
   font-style: normal;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
 
   color: var(--basic-extra-dark);
+  margin: 0;
 }
 
-.h3-text {
+.title-m {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 
   color: var(--basic-extra-dark);
+  margin: 0;
 }
 
-.h4-text {
+.title-xs {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
 
   color: var(--basic-extra-dark);
+  margin: 0;
 }
 
-.p1-text {
+.text {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
 
   color: var(--basic-extra-dark);
+  margin: 0;
 }
 
-.p2-text {
+.text-medium {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
 
-  color: var(--basic-dark);
+  color: var(--basic-extra-dark);
+  margin: 0;
 }
 
-.p3-text {
+.text-small {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
 
   color: var(--basic-extra-dark);
+  margin: 0;
 }
 
-.p3-text-bold {
+.text-small-bold {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
 
   color: var(--basic-extra-dark);
+  margin: 0;
 }
 
 .sign-text {
@@ -199,6 +237,7 @@ body {
   line-height: 20px;
 
   color: var(--basic-dark);
+  margin: 0;
 }
 
 .sign-text-bold {
@@ -208,15 +247,17 @@ body {
   line-height: 20px;
 
   color: var(--basic-dark);
+  margin: 0;
 }
 
-.sign2-text {
+.sign-text-small {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
 
   color: var(--basic-dark);
+  margin: 0;
 }
 
 
@@ -286,4 +327,45 @@ body {
 
 .header__link {
   text-decoration: none;
+}
+
+
+/* Баннеры с подарками */
+
+.banner {
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-top: 80px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.banner__title {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.banner__flex-container {
+  margin-top: 55px;
+  display: flex;
+  gap: 30px;
+}
+
+.banner__background {
+  width: 570px;
+  height: 268px;
+  border-radius: 16px;
+  background: var(--special-neutral);
+
+  box-sizing: border-box;
+  display: flex;
+  gap: 11px;
+}
+
+.banner__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 36px 0 36px 36px;
 }
