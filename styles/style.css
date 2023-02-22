@@ -512,7 +512,7 @@ body {
   height: 100%;
   border-radius: 16px;
 
-  padding: 56px 40px;
+  padding: 56px 40px 56px 40px;
   box-sizing: border-box;
 }
 
@@ -529,8 +529,9 @@ body {
 }
 
 .info-banner__content {
-  display: flex;
-  justify-content: flex-start;
+  display: grid;
+    grid-template-columns: 48px 1fr;
+    grid-column-gap: 16px;
 }
 
 .info-banner__icon {
@@ -544,4 +545,5 @@ body {
   border: 2px solid var(--basic-extra-dark);
   border-radius: 50%;
   margin-right: 16px;
+  box-sizing: border-box;
 }
