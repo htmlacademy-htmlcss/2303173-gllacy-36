@@ -261,6 +261,105 @@ body {
 }
 
 
+/* Карточка товара */
+
+.product-card {
+  display: flex;
+  justify-content: center;
+}
+
+.product-card__picture {
+  position: absolute;
+}
+
+.product-card__background {
+  height: 281px;
+  width: 100%;
+  border-radius: 8px;
+  box-sizing: border-box;
+
+  margin-top: 51px;
+  background: var(--basic-extra-light);
+
+  padding: 133px 40px 24px 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.product-card__title {
+  color: var(--basic-extra-dark);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  margin: 0;
+  text-align: center;
+}
+
+.product-card__text {
+  color: var(--basic-dark);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  margin: 0;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.product-card__price-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 16px;
+}
+
+.product-card__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  padding: 0;
+
+  border-radius: 16px;
+  border: 0;
+  background-color: var(--special-extra-bright);
+  box-sizing: border-box;
+
+  width: 32px;
+  height: 32px;
+}
+
+.product-card__button:hover {
+  background: rgba(252, 252, 252, 0.3);
+  border: 2px solid var(--special-extra-bright);
+}
+
+.product-card__button:hover svg path {
+  fill: var(--basic-extra-dark);
+}
+
+.product-card__button:active {
+  background: var(--special-extra-light);
+  border: 2px solid var(--special-extra-bright);
+}
+
+.product-card__button:active svg path {
+  fill: var(--basic-extra-dark);
+}
+
+.product-card__button:focus {
+  border: 2px solid var(--basic-extra-dark);
+  outline: transparent;
+}
+
+
 /* Хедер (site-navigation) */
 
 .header {
@@ -341,7 +440,7 @@ body {
   flex-direction: column;
 }
 
-.banner__title {
+.section__title {
   margin: 0 auto;
   text-align: center;
 }
@@ -368,4 +467,27 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding: 36px 0 36px 36px;
+}
+
+
+/* Карточки продуктов */
+
+.products {
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.products__grid-container {
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 40px 30px;
+}
+
+
+/* Секция с информацией */
+
+.info-banner {
+
 }
