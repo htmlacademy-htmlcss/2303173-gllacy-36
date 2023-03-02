@@ -249,6 +249,32 @@ body {
   fill: var(--basic-extra-dark);
 }
 
+.button--swiper {
+  width: 12px;
+  height: 12px;
+  box-sizing: border-box;
+
+  border-radius: 50%;
+  background: rgba(252, 252, 252, 0.3);
+  border: transparent;
+}
+
+.button--swiper:hover {
+  border: 1px solid var(--basic-extra-light);
+}
+
+.button--swiper:active {
+  background: rgba(252, 252, 252, 0.5);
+}
+
+.button--swiper:focus {
+  border: 1px solid var(--basic-extra-dark);
+}
+
+.button--swiper.button--active {
+  background: var(--basic-extra-light);
+}
+
 
 /* Параграфы и заголовки */
 
@@ -606,7 +632,50 @@ body {
   position: absolute;
 }
 
+.next-products {
+  display: flex;
+  gap: 41px;
 
+  margin-left: 37px;
+}
+
+.next-products__container {
+  margin-top: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.next-products__circle {
+  background: var(--special-extra-light);
+  opacity: 0.4;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.next-products__picture {
+  position: absolute;
+}
+
+.slider__social-buttons-container {
+  display: flex;
+  gap: 16px;
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.swiper-buttons {
+  display: flex;
+  gap: 8px;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
 
 
 /* Баннеры с подарками */
