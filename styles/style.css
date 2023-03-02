@@ -462,6 +462,25 @@ body {
   gap: 6px;
 }
 
+.navigation__link:hover {
+  background: rgba(252, 252, 252, 0.5);
+  padding: 8px 16px;
+  border-radius: 18px;
+}
+
+.navigation__link:active {
+  background: var(--basic-extra-light);
+  padding: 8px 16px;
+  border-radius: 18px;
+}
+
+.navigation__link:focus {
+  background: rgba(252, 252, 252, 0.5);
+  outline: 2px solid var(--basic-extra-dark);
+  border-radius: 18px;
+  padding: 8px 16px;
+}
+
 
 /* Хедер (user-navigation) */
 
@@ -481,6 +500,13 @@ body {
 
 .header__link {
   text-decoration: none;
+}
+
+
+/* Слайдер с мороженками */
+
+.product-slider {
+
 }
 
 
