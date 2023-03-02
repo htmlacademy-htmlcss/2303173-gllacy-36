@@ -278,8 +278,27 @@
         <p class="text-medium">Хочется полакомиться любимым десертом,<br> но нет времени съездить в магазин? Закажите<br> доставку мороженого на дом, и курьер<br> привезёт вам ваш заказ в течение часа!</p>
       </div>
 
-      <div class="delivery-form__background">
+      <div class="delivery__form-container">
+
         <p class="text-medium">Укажите адрес и дату доставки, и мы свяжемся<br> с вами, чтобы подтвердить заказ.</p>
+
+        <form class="delivery__form">
+
+          <div class="delivery__input-container">
+            <input class="date__input mailing__input" type="text" name="delivery-date" placeholder="01.04.2020">
+            <input class="phone__input mailing__input" type="tel" name="delivery-telephone" placeholder="+7 800 999-00-00">
+          </div>
+
+          <div class="adress__container">
+            <input class="adress__input mailing__input" type="text" name="delivery-adress" placeholder="ул. Большая Конюшенная, 19/8">
+          </div>
+
+          <div class="button-container">
+            <button class="button button--secondary">Отправить</button>
+          </div>
+
+        </form>
+
       </div>
 
     </section>
