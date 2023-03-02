@@ -291,7 +291,7 @@ body {
   font-size: 14px;
   line-height: 20px;
 
-  color: var(--basic-dark);
+  color: var(--basic-extra-dark);
   margin: 0;
 }
 
@@ -301,7 +301,7 @@ body {
   font-size: 14px;
   line-height: 20px;
 
-  color: var(--basic-dark);
+  color: var(--basic-extra-dark);
   margin: 0;
 }
 
@@ -859,7 +859,27 @@ body {
   gap: 16px;
 }
 
+.footer__menu {
+  padding-left: 24px;
 
+  display: flex;
+  gap: 24px;
+  position: relative;
+}
+
+.footer__heart-container {
+  position: absolute;
+
+  left: 0;
+  top: 2px;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
 
 .footer__logo {
   display: flex;
