@@ -779,6 +779,42 @@ body {
   max-width: 1170px;
   margin: 0 auto;
   height: 492px;
+  box-sizing: border-box;
+  border-radius: 16px;
 
   padding: 64px;
+  margin-top: 80px;
+
+  background: url(/assets/feedbackbackground.png);
+  background-size: cover;
+  background-position: 0 -81px;
 }
+
+.feedback__container {
+  padding: 40px 40px 42px 40px;
+  box-sizing: border-box;
+
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
+  background: var(--basic-extra-light);
+
+  width: 343px;
+  height: 364px;
+}
+
+.feedback__text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.text-indent {
+  margin-top: 24px;
+}
+
+.feedback__button-container {
+  margin-top: 32px;
+}
+
+
+/* Футер */
