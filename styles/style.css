@@ -178,6 +178,30 @@ body {
   outline: 2px solid var(--basic-extra-dark);
 }
 
+.button--social {
+  border-radius: 12px;
+  outline: 2px solid rgba(252, 252, 252, 0.3);
+  border: 0;
+  background: rgba(252, 252, 252, 0.3);
+
+  width: 24px;
+  height: 24px;
+}
+
+.button--social:hover {
+  background: var(--basic-extra-dark);
+}
+
+.button--social:active {
+  background: var(--basic-extra-dark);
+  opacity: 0.5;
+}
+
+.button--social:focus {
+  outline: 2px solid var(--basic-extra-dark);
+  background: var(--basic-extra-dark);
+}
+
 
 /* Параграфы и заголовки */
 
@@ -287,7 +311,7 @@ body {
   font-size: 12px;
   line-height: 16px;
 
-  color: var(--basic-dark);
+  color: var(--basic-extra-dark);
   margin: 0;
 }
 
@@ -818,3 +842,28 @@ body {
 
 
 /* Футер */
+
+.footer {
+  max-width: 1170px;
+  margin: 0 auto;
+
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-buttons__container {
+  display: flex;
+  gap: 16px;
+}
+
+
+
+.footer__logo {
+  display: flex;
+  flex-direction: column;
+
+  gap: 14px;
+}
