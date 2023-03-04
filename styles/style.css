@@ -1124,13 +1124,75 @@ body {
   padding: 41px 0 41px 487px;
   box-sizing: border-box;
   max-width: 1170px;
+
+  display: flex;
+  justify-content: space-between;
 }
 
+.pagination {
+  display: flex;
+  align-items: center;
+}
+
+.pagination__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+}
+
+.pagination__item {
+  display: inline-block;
+}
+
+.pagination__link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+}
+
+.pagination__link.page-number:hover {
+  background: rgba(252, 252, 252, 0.5);
+}
+
+.pagination__link.page-number:active {
+  background: rgba(252, 252, 252, 0.5);
+  border: 1px solid var(--basic-extra-light);
+}
+
+.pagination__link.page-number:focus {
+  background: rgba(252, 252, 252, 0.3);
+  border: 1px solid var(--basic-extra-dark);
+}
+
+.page-number {
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+}
+
+.pagination__link.current-page {
+  background: var(--basic-extra-light);
+  border-radius: 12px;
+}
+
+.pagination__arrow-prev {
+  margin-right: 8px;
+}
+
+.pagination__arrow-next {
+  margin-left: 8px;
+}
 
 
 /* Каталог футер */
 
 .footer.catalog-footer {
   border-top: 1px solid rgba(252, 252, 252, 0.3);
-  margin-top: 40px;
+  margin-top: 39px;
 }
