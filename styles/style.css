@@ -1083,7 +1083,7 @@ body {
 }
 
 
-/* Страница каталога */
+/* catalog.html */
 
 /* Каталог навигация */
 
@@ -1113,4 +1113,24 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   gap: 40px 30px;
+}
+
+
+/* Пагинация */
+
+.catalog-pagination {
+  margin: 0 auto;
+  margin-top: 16px;
+  padding: 41px 0 41px 487px;
+  box-sizing: border-box;
+  max-width: 1170px;
+}
+
+
+
+/* Каталог футер */
+
+.footer.catalog-footer {
+  border-top: 1px solid rgba(252, 252, 252, 0.3);
+  margin-top: 40px;
 }
