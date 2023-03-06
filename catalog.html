@@ -110,7 +110,137 @@
       <h2 class="title-l">Сливочное мороженое</h2>
     </section>
 
-    <section class="catalog-filter">
+    <section class="filter">
+      <form class="filter__container" action="https://echo.htmlacademy.ru" method="post">
+
+        <div class="filter__line">
+
+          <div class="sort-container">
+            <legend class="sign-text sort-container__legend">Сортировка:</legend>
+            <select class="filter__select sign-text" name="filter-sort">
+              <option class="filter__option" value="popular" selected>по популярности</option>
+            </select>
+
+            <div class="sort-container__arrow">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.80812 6.19526C3.54777 5.93491 3.12566 5.93491 2.86531 6.19526C2.60496 6.45561 2.60496 6.87772 2.86531 7.13807L7.52565 11.7984C7.52771 11.8005 7.52979 11.8026 7.53189 11.8047C7.66259 11.9354 7.83404 12.0005 8.00534 12C8.1753 11.9995 8.34511 11.9344 8.47478 11.8047C8.47687 11.8027 8.47894 11.8006 8.48099 11.7985L13.1414 7.13807C13.4017 6.87772 13.4017 6.45561 13.1414 6.19526C12.881 5.93491 12.4589 5.93491 12.1986 6.19526L8.00334 10.3905L3.80812 6.19526Z" fill="#2D3440"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="price-range-container">
+
+            <div class="range-input-container">
+              <p class="sign-text">Цена:</p>
+              <input class="range-input-min sign-text" type="number" name="filter-price-min" value="100">
+              <p class="sign-text">₽ –</p>
+              <input class="range-input-max sign-text" type="number" name="filter-price-max" value="500">
+              <p class="sign-text">₽</p>
+            </div>
+
+            <div class="range-slider">
+              <div class="range-slider__main-line"></div>
+              <div class="range-slider__center-line"></div>
+              <button class="button button--range-slider button--min" type="button"></button>
+              <button class="button button--range-slider button--max" type="button"></button>
+            </div>
+          </div>
+
+          <div class="fat-content-container">
+            <legend class="sign-text fat-content-container__legend">Жирность:</legend>
+
+            <ul class="fat-content-list">
+              <li class="fat-content-item">
+                <label class="fat-content-control">
+                  <input class="fat-control-input visually-hidden" type="radio" name="filter-fat-content" value="0">
+                  <span class="fat-control-mark"></span>
+                  <span class="sign-text">0%</span>
+                </label>
+              </li>
+
+              <li class="fat-content-item">
+                <label class="fat-content-control">
+                  <input class="fat-control-input visually-hidden" type="radio" name="filter-fat-content" value="10-" checked>
+                  <span class="fat-control-mark"></span>
+                  <span class="sign-text">до 10%</span>
+                </label>
+              </li>
+
+              <li class="fat-content-item">
+                <label class="fat-content-control">
+                  <input class="fat-control-input visually-hidden" type="radio" name="filter-fat-content" value="30-">
+                  <span class="fat-control-mark"></span>
+                  <span class="sign-text">до 30%</span>
+                </label>
+              </li>
+
+              <li class="fat-content-item">
+                <label class="fat-content-control">
+                  <input class="fat-control-input visually-hidden" type="radio" name="filter-fat-content" value="30+">
+                  <span class="fat-control-mark"></span>
+                  <span class="sign-text">выше 30%</span>
+                </label>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="filter__line-secondary">
+
+          <div class="filler-container">
+            <legend class="sign-text filler-container__legend">Наполнители:</legend>
+
+            <ul class="filler">
+              <li class="filler-item">
+                <label class="filler-control">
+                  <input class="filler-control-input visually-hidden" type="checkbox" name="filter-filler" value="chocolate">
+                  <span class="filler-control-mark"></span>
+                  <span class="sign-text">шоколадные</span>
+                </label>
+              </li>
+
+              <li class="filler-item">
+                <label class="filler-control">
+                  <input class="filler-control-input visually-hidden" type="checkbox" name="filter-filler" value="sugar-sprinkle">
+                  <span class="filler-control-mark"></span>
+                  <span class="sign-text">сахарные посыпки</span>
+                </label>
+              </li>
+
+              <li class="filler-item">
+                <label class="filler-control">
+                  <input class="filler-control-input visually-hidden" type="checkbox" name="filter-filler" value="fruit">
+                  <span class="filler-control-mark"></span>
+                  <span class="sign-text">фрукты</span>
+                </label>
+              </li>
+
+              <li class="filler-item">
+                <label class="filler-control">
+                  <input class="filler-control-input visually-hidden" type="checkbox" name="filter-filler" value="syrup">
+                  <span class="filler-control-mark"></span>
+                  <span class="sign-text">сиропы</span>
+                </label>
+              </li>
+
+              <li class="filler-item">
+                <label class="filler-control">
+                  <input class="filler-control-input visually-hidden" type="checkbox" name="filter-filler" value="jam">
+                  <span class="filler-control-mark"></span>
+                  <span class="sign-text">джемы</span>
+                </label>
+              </li>
+            </ul>
+
+          </div>
+
+          <button class="button button--filter">Применить</button>
+
+        </div>
+
+      </form>
 
     </section>
 
