@@ -1085,11 +1085,39 @@ body {
 
 /* catalog.html */
 
-/* Каталог навигация */
+/* Каталог breadcrumbs */
 
-.catalog-navigation {
-  margin-top: 32px;
-  height: 82px;
+.breadcrumbs {
+  margin: 0 auto;
+  margin-top: 31px;
+
+  max-width: 1170px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.breadcrumbs__list {
+  list-style-type: none;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.breadcrumbs__item {
+  display: inline-block;
+}
+
+.breadcrumbs__link {
+  text-decoration: none;
+}
+
+.breadcrumbs--current {
+  border-bottom: 1px solid var(--basic-extra-dark);
 }
 
 
@@ -1176,9 +1204,10 @@ body {
   border-radius: 12px;
 }
 
-.pagination__link.current-page {
+.pagination__link.current-page.page-number {
   background: var(--basic-extra-light);
   border-radius: 12px;
+  border: transparent;
 }
 
 .pagination__arrow-prev {
