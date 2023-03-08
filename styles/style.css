@@ -1423,10 +1423,41 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .filler-control-mark {
+  position: absolute;
+  left: 0;
+  top: 2px;
 
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+
+  border: 1.5px solid var(--basic-extra-dark);
+  border-radius: 2.5px;
 }
 
+.filler-control:hover .filler-control-mark {
+  border: 1.5px solid var(--basic-extra-light);
+}
 
+.filler-control-input[type="checkbox"]:checked + .filler-control-mark {
+  background: url(/assets/checkboxchecked.svg);
+  border: transparent;
+}
+
+.filler-control:hover .filler-control-input[type="checkbox"]:checked + .filler-control-mark {
+  background: url(/assets/checkboxcheckedhover.svg);
+  border: transparent;
+}
+
+.filler-control .filler-control-input[type="checkbox"]:checked:disabled + .filler-control-mark {
+  background: url(/assets/checkboxcheckeddisabled.svg);
+  border: transparent;
+}
+
+.filler-control:disabled .filler-control-mark {
+  border: 1.5px solid var(--basic-extra-dark);
+  opacity: 0.5;
+}
 
 
 /* кнопка фильтр */
