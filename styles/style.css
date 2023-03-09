@@ -697,6 +697,38 @@ input[type='search']::-webkit-search-results-decoration {
 }
 
 
+/* Попап корзины на главной */
+
+.index-cart-link {
+  position: relative;
+}
+
+.index-cart-link:focus-within .popup {
+  display: block;
+}
+
+.index-cart-popup {
+  width: 288px;
+  height: 156px;
+  box-sizing: border-box;
+
+  position: absolute;
+  right: 0;
+
+  z-index: 1;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+
+  margin-top: 8px;
+  background: var(--basic-extra-light);
+  border-radius: 4px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  text-align: center;
+}
+
+
+
 
 
 /* Слайдер с мороженками */
