@@ -593,7 +593,6 @@ body {
 
 .header__link {
   text-decoration: none;
-  position: relative;
 }
 
 
@@ -616,11 +615,25 @@ body {
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
 }
 
+.header-search-link {
+  position: relative;
+}
+
+.popup-search__form{
+ position: relative;
+}
+
+.search-cross {
+  position: absolute;
+  right: 13px;
+  top: 16px;
+}
+
 .popup {
   display: none;
 }
 
-.header__link:focus-within .popup {
+.header-search-link:focus-within .popup {
   display: block;
 }
 
@@ -630,6 +643,60 @@ input[type='search']::-webkit-search-results-button,
 input[type='search']::-webkit-search-results-decoration {
 	display: none;
 }
+
+
+/* Попап логина */
+
+.popup-login {
+  width: 420px;
+  height: 350px;
+  box-sizing: border-box;
+
+  padding: 48px 48px 52px 48px;
+  margin-top: 8px;
+  background: var(--basic-extra-light);
+  border-radius: 4px;
+
+  position: absolute;
+  right: 0;
+
+  z-index: 1;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+}
+
+
+.header-login-link {
+  position: relative;
+}
+
+.header-login-link:focus-within .popup {
+  display: block;
+}
+
+.popup-login-form {
+  margin-top: 32px;
+}
+
+.popup-login-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.popup-login-button-wrapper {
+  margin-top: 32px;
+  display: flex;
+}
+
+.popup-login-links {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 23px;
+  gap: 4px;
+}
+
+
 
 
 /* Слайдер с мороженками */
