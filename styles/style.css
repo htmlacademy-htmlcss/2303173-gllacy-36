@@ -826,6 +826,76 @@ input[type='search']::-webkit-search-results-decoration {
 }
 
 
+/* Фидбек попап */
+
+.feedback-popup {
+  width: 570px;
+  height: 545px;
+  box-sizing: border-box;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 1;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+
+  background: var(--basic-extra-light);
+  border-radius: 8px;
+}
+
+.feedback-popup-container {
+  width: 570px;
+  height: 545px;
+  box-sizing: border-box;
+  padding: 64px 64px 66px 64px;
+  position: relative;
+}
+
+.feedback-popup-form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.button--feedback {
+  border: transparent;
+  background: transparent;
+  position: absolute;
+  top: 32px;
+  right: 32px;
+}
+
+.button--feedback-form {
+  margin-top: 16px;
+  margin-left: 291px;
+}
+
+.feedback-textarea {
+  height: 149px;
+  resize:none;
+  font-family: 'Inter';
+  font-style: normal;
+}
+
+.feedback-popup-visible {
+  display: block;
+}
+
+.blackout {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  background-color: rgba(45, 52, 64, 0.3);
+}
+
+
 /* Слайдер с мороженками */
 
 
