@@ -1440,6 +1440,10 @@ input[type='search']::-webkit-search-results-decoration {
   border-bottom: 1px solid var(--basic-extra-dark);
 }
 
+.breadcrumbs__link:hover:not(.breadcrumbs--current) {
+  opacity: 0.6;
+}
+
 
 /* Каталог фильтр */
 
