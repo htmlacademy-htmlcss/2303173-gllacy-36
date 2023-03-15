@@ -1467,6 +1467,12 @@ input[type='search']::-webkit-search-results-decoration {
   gap: 24px;
 }
 
+.filter-fieldset {
+  margin: 0;
+  padding: 0;
+  border: transparent;
+}
+
 .filter__line-secondary {
   display: flex;
   flex-direction: row;
@@ -1515,7 +1521,7 @@ input[type='search']::-webkit-search-results-decoration {
 
 .sort-container__arrow {
   position: absolute;
-  top: 38px;
+  top: 18px;
   right: 13px;
 }
 
@@ -1692,6 +1698,10 @@ input[type="number"]::-webkit-inner-spin-button {
   border: 1.33333px solid var(--basic-dark);
 }
 
+.fat-control-input:focus + .fat-control-mark {
+  outline: 2px solid rgba(133, 133, 133, 0.4);
+}
+
 /* Наполнители */
 
 .filler-container {
@@ -1762,6 +1772,10 @@ input[type="number"]::-webkit-inner-spin-button {
 .filler-control:disabled .filler-control-mark {
   border: 1.5px solid var(--basic-extra-dark);
   opacity: 0.5;
+}
+
+.filler-control-input:focus + .filler-control-mark {
+  outline: 2px solid rgba(133, 133, 133, 0.4);
 }
 
 
