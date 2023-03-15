@@ -195,6 +195,11 @@ body {
   outline: 2px solid var(--basic-extra-dark);
 }
 
+.button--secondary:disabled {
+  background: var(--basic-neutral);
+  outline: 4px solid rgba(185, 185, 185, 0.3);
+}
+
 .button--social {
   border-radius: 12px;
   outline: 2px solid rgba(252, 252, 252, 0.3);
@@ -1223,6 +1228,11 @@ input[type='search']::-webkit-search-results-decoration {
   color: var(--basic-extra-dark);
 }
 
+.mailing__input:disabled {
+  background: var(--basic-light);
+  border: 1px solid var(--basic-neutral);
+}
+
 
 /* Форма доставки */
 
@@ -1810,6 +1820,10 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .button--filter:focus {
   outline: 2px solid var(--basic-extra-dark);
+}
+
+.button--filter:disabled {
+  opacity: 0.4;
 }
 
 
