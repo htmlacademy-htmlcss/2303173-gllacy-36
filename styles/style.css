@@ -1030,6 +1030,7 @@ input[type='search']::-webkit-search-results-decoration {
   margin-top: 55px;
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .banner__background {
